@@ -14,7 +14,7 @@ function App() {
   const [letra, guardarLetra] = useState('')
 
   //State para el artista
-  const [artista, guardarArtista] = useState('')
+  const [artista, guardarArtista] = useState({})
 
   //Actualizando la carga
   useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
 
     consultarApis()
 
-  }, [buscarLetra])
+  }, [buscarLetra, artista, letra])
 
 
 
